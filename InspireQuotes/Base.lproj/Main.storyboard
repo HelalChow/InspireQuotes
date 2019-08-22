@@ -56,6 +56,9 @@
                                 <state key="normal" title="Inspire Me">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="inspireMeDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ceu-W2-6Xc"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="steve" translatesAutoresizingMaskIntoConstraints="NO" id="T05-9y-sxh">
                                 <rect key="frame" x="59" y="512" width="103" height="106"/>
@@ -73,6 +76,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="authorImageView" destination="T05-9y-sxh" id="ygt-zV-don"/>
+                        <outlet property="authorLabel" destination="dn0-85-cYt" id="vjM-Bj-gAk"/>
                         <outlet property="quoteTextLabel" destination="fX5-hM-z5S" id="zWv-gO-n01"/>
                     </connections>
                 </viewController>

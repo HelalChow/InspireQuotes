@@ -16,11 +16,25 @@ class ViewController: UIViewController {
     }
 
     @IBOutlet weak var quoteTextLabel: UILabel!
-    
-    
-    
-    
+    @IBOutlet weak var authorImageView: UIImageView!
+    @IBOutlet weak var authorLabel: UILabel!
     
 
+    @IBAction func inspireMeDidTap(_ sender: Any) {
+        
+        let newQuote = ["No matter how small you start, start somehting that matters."]
+        
+        let newAuthor = ["Brendon Burchard"]
+        
+        let newImage = ["brendon"]
+        
+        quoteTextLabel.text = newQuote[0]
+        
+        
+    }
+    
+    
+    
+    
 }
 
