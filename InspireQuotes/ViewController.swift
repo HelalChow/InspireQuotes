@@ -19,23 +19,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var authorImageView: UIImageView!
     @IBOutlet weak var authorLabel: UILabel!
     
-    var i:Int = 0
+    var i:Int = 1
 
     @IBAction func inspireMeDidTap(_ sender: Any) {
         
-        let newQuote = ["No matter how small you start, start somehting that matters.", "Don't waste your life searching for adventures, but rather make the most out of this adventure known as life"]
+        let newQuote = ["Your time is limited. So don't waste it living someone elses life.","No matter how small you start, start somehting that matters.", "Don't waste your life searching for adventures, but rather make the most out of this adventure known as life"]
         
-        let newAuthor = ["Brendon Burchard", "My fathers fathers grandson"]
+        let newAuthor = ["Steve Jobs","Brendon Burchard", "Helal Chowdhury"]
         
-        let newImage = ["brendon", "helal"]
+        let newImage = ["steve","brendon", "helal"]
         
         quoteTextLabel.text = newQuote[i]
         authorImageView.image = UIImage(named: newImage[i])
         authorLabel.text = newAuthor[i]
-        if i<newAuthor.count-1{
-            i+=1
+        if i==newAuthor.count-1{
+            i=0
         }
+        else{i+=1}
     }
+    
+    
+    
+    
+    
+    
     
     
     
